@@ -9,7 +9,7 @@
 <%@page import="backenddmm20232.controllers.ControllerUsuario" %>
 
 <%
-    int id = Integer.parseInt(request.getParameter("ID"));
+    int id = Integer.parseInt(request.getParameter("SELECTUSU"));
     String login = request.getParameter("LOGIN");
     String senha = request.getParameter("SENHA");
     String status = request.getParameter("STATUS");
