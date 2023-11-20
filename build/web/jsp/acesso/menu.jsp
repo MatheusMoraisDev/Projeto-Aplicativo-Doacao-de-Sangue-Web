@@ -23,6 +23,7 @@
     <h1>MENU</h1> <br>
     <% if(valida) { %> 
         <h1>Usuario</h1> 
+        <a href="../usuario/alterarUsuario.jsp">Alterar</a> 
         <a href="../usuario/buscarUsuario.jsp">Buscar</a> 
         | <a href="../usuario/listarUsuario.jsp">listar</a> 
         | <a href="../usuario/inserirUsuario.jsp">Inserir</a>
@@ -34,14 +35,16 @@
         <a href="../sistema/buscarSistema.jsp">Buscar</a> 
         | <a href="../sistema/listarSistema.jsp">Listar</a> 
         | <a href="../sistema/inserirSistema.jsp">Inserir</a>
-        <h1>Usuario-Sistema</h1> 
+        <h1>Usuario-Sistema</h1>
+        <a href="../ususist/alterarUsuSist.jsp">Alterar</a>
         <a href="../ususist/buscarUsuSist.jsp">Buscar</a> 
         | <a href="../ususist/listarUsuSist.jsp">listar</a> 
         | <a href="../ususist/inserirUsuSist.jsp">Inserir</a>
         <h1>Transações de Sangue</h1> 
-        <a href="../ususist/buscarUsuSist.jsp">Buscar</a> 
-        | <a href="../ususist/listarUsuSist.jsp">listar</a> 
-        | <a href="../ususist/inserirUsuSist.jsp">Inserir</a>
+        <a href="../transacoessangue/alterarTransacoesSangue.jsp">Alterar</a> 
+        <a href="../transacoessangue/buscarTransacoesSangue.jsp">Buscar</a> 
+        | <a href="../transacoessangue/listarTransacoesSangue.jsp">Listar</a> 
+        | <a href="../transacoessangue/inserirTransacoesSangue.jsp">Inserir</a>
         <h1>Agendamentos</h1> 
         <a href="../ususist/buscarUsuSist.jsp">Buscar</a> 
         | <a href="../ususist/listarUsuSist.jsp">listar</a> 

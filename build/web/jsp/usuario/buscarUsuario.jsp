@@ -1,5 +1,5 @@
 <%-- 
-    Document   : buscaUsuario
+    Document   : buscarUsuario
     Created on : 09/04/2021, 10:17:22
     Author     : User
 --%>
