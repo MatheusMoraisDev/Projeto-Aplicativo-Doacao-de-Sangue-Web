@@ -4,14 +4,14 @@
     Author     : User
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="backenddmm20232.models.beans.Sistema" %>
-<%@page import="backenddmm20232.controllers.ControllerSistema" %>
+<%@page import="backenddmm20232.models.beans.TransactionDonation" %>
+<%@page import="backenddmm20232.controllers.ControllerTransactionDonation" %>
 
 <%
     int id = Integer.parseInt(request.getParameter("ID"));
-    Sistema sEntrada = new Sistema(id);
-    ControllerSistema sCont = new ControllerSistema();
-    Sistema sSaida = sCont.excluir(sEntrada);
+    TransactionDonation tdEntrada = new TransactionDonation(id);
+    ControllerTransactionDonation tdCont = new ControllerTransactionDonation();
+    TransactionDonation tdSaida = tdCont.excluir(tdEntrada);
 %>
 
 <!DOCTYPE html>
@@ -20,9 +20,10 @@
     <title>JSP Page</title>
     <body>
     <div class="container"/>
-        <h1>VALIDA EXCLUSÃO</h1>
-        ID = <%=sSaida.getId()%> <br>
-        NOME = <%=sSaida.getNome()%> <br>
+        <h1>VALIDAR EXCLUSÃO</h1>
+        ID = <%=tdSaida.getId()%> <br>
+        QUANTIDADE = <%=tdSaida.getQtd()%> <br>
+        DATA = <%=tdSaida.getData()%> <br>
     </div>
     </body>
 </html>

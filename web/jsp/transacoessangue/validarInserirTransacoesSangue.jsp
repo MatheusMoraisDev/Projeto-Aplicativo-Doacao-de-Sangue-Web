@@ -4,17 +4,23 @@
     Author     : User
 --%>
 
+<%@page import="backenddmm20232.controllers.ControllerTransactionDonation"%>
+<%@page import="backenddmm20232.controllers.ControllerTransactionDonation"%>
+<%@page import="backenddmm20232.models.beans.TransactionDonation"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="backenddmm20232.models.beans.Sistema" %>
 <%@page import="backenddmm20232.controllers.ControllerSistema" %>
 
 <%
-        String nome = request.getParameter("NOME");
-        String servidor = request.getParameter("SERVIDOR");
-        String status = request.getParameter("STATUS");
-        Sistema sEntrada = new Sistema(nome,servidor,status);
-        ControllerSistema sisCont = new ControllerSistema();
-        Sistema sSaida = sisCont.inserir(sEntrada);
+    int idDoador = Integer.parseInt(request.getParameter("SELECTDOADOR"));
+    int idHospital = Integer.parseInt(request.getParameter("SELECTHOSPITAL"));
+    int qtd = Integer.parseInt(request.getParameter("QTD"));
+    String data = request.getParameter("DATA");
+    String teste = request.getParameter("TESTE");
+    
+    TransactionDonation tdEntrada = new TransactionDonation(idDoador, idHospital, qtd, data, teste);
+    ControllerTransactionDonation contTd = new ControllerTransactionDonation();
+    TransactionDonation tdSaida = contTd.inserir(tdEntrada);
 %>
 
 <!DOCTYPE html>
@@ -24,10 +30,12 @@
     <body>
     <div class="container"/>
         <h1>INCLUSÃO CONCLUIDA</h1>
-        ID = <%=sSaida.getId()%> <br>
-        NOME = <%=sSaida.getNome()%> <br>
-        RG = <%=sSaida.getServidor()%> <br>
-        CPF = <%=sSaida.getStatus()%> <br>
+        ID = <%=tdSaida.getId()%> <br>
+        IDDOADOR = <%=tdSaida.getIdDoador()%> <br>
+        IDHOSPITAL = <%=tdSaida.getIdHospital()%> <br>
+        QTD = <%=tdSaida.getQtd()%> <br>
+        DATA = <%=tdSaida.getData()%> <br>
+        TESTE = <%=tdSaida.getTeste()%> <br>
     </div>
     </body>
 </html>

@@ -24,7 +24,7 @@
         <h1>LISTA</h1> <br>
         <% if(!(usSaida.isEmpty())) { %>
             <% for (Usuario listaUsu :usSaida){ %>
-                USUARIO = ID = <%=listaUsu.getId()%> | LOGIN = <%=listaUsu.getLogin()%> | SENHA = <%=listaUsu.getSenha()%> | STATUS = <%=listaUsu.getStatus()%> | TIPO = <%=listaUsu.getTipo()%> - <a href="../usuario/alteraUsuario.jsp?ID=<%=listaUsu.getId()%>">Altera</a> - <a href="../usuario/validaExcluiUsuario.jsp?ID=<%=listaUsu.getId()%>">Excluir</a> <br>
+                USUARIO = ID = <%=listaUsu.getId()%> | LOGIN = <%=listaUsu.getLogin()%> | SENHA = <%=listaUsu.getSenha()%> | STATUS = <%=listaUsu.getStatus()%> | TIPO = <%=listaUsu.getTipo()%> - <a href="../usuario/alterarUsuario.jsp?ID=<%=listaUsu.getId()%>">Altera</a> - <a href="../usuario/validarExcluirUsuario.jsp?ID=<%=listaUsu.getId()%>">Excluir</a> <br>
             <% } %>
        <% } else { %>
             LISTA VAZIA

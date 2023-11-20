@@ -9,17 +9,13 @@
 <%@page import="backenddmm20232.models.beans.PessoaFisica"%>
 <%@page import="java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="backenddmm20232.models.beans.TransactionDonation" %>
-<%@page import="backenddmm20232.controllers.ControllerTransactionDonation" %>
+<%@page import="backenddmm20232.models.beans.ScheduledDonation" %>
+<%@page import="backenddmm20232.controllers.ControllerScheduledDonation" %>
 
 <%
     PessoaFisica pf = new PessoaFisica("");
     ControllerPessoaFisica contPf = new ControllerPessoaFisica();
     List<PessoaFisica> listaSaidaPf = contPf.listar(pf);
-    
-    PessoaJuridica Pj = new PessoaJuridica("");
-    ControllerPessoaJuridica contPj = new ControllerPessoaJuridica();
-    List<PessoaJuridica> listaSaidaPj = contPj.listar(Pj);
 %>
     
 <!DOCTYPE html>
@@ -29,22 +25,15 @@
     <body>
     <div class="container"/>
         <h1>INSERIR</h1>
-        <form name="validarInserirTransacoesSangue" action="validarInserirTransacoesSangue.jsp" method="post">
+        <form name="validarInserirAgendamentos" action="validarInserirAgendamentos.jsp" method="post">
         DOADOR:
         <select name="SELECTDOADOR" class="browser-default">
         <% for (PessoaFisica listaDoadores : listaSaidaPf){ %>
                 <option value="<%=listaDoadores.getId()%>"><%=listaDoadores.getNome()%></option>
         <% } %>
         </select>
-        HOSPITAL:
-        <select name="SELECTHOSPITAL" class="browser-default">
-        <% for (PessoaJuridica listaHospitais : listaSaidaPj){ %>
-                <option value="<%=listaHospitais.getId()%>"><%=listaHospitais.getRazaoSocial()%></option>
-        <% } %>
-        </select>
-        QUANTIDADE: <input type="text" name ="QTD" value=""> <br> 
         DATA : <input type="text" name ="DATA" value=""> <br>
-        TESTE: <input type="text" name ="TESTE" value=""> <br>
+        STATUS: <input type="text" name ="STATUS" value=""> <br>
         <input type="submit" name ="ENTRAR" value="ENTRAR">
         </form>
     </div>

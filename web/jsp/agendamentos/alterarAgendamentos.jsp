@@ -9,24 +9,21 @@
 <%@page import="backenddmm20232.controllers.ControllerPessoaFisica"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.util.List"%>
-<%@page import="backenddmm20232.models.beans.TransactionDonation" %>
-<%@page import="backenddmm20232.controllers.ControllerTransactionDonation" %>
+<%@page import="backenddmm20232.models.beans.ScheduledDonation" %>
+<%@page import="backenddmm20232.controllers.ControllerScheduledDonation" %>
 <%@page import="backenddmm20232.models.beans.Sistema" %>
 <%@page import="backenddmm20232.controllers.ControllerSistema" %>
 <%@page import="backenddmm20232.models.beans.Usuario" %>
 <%@page import="backenddmm20232.controllers.ControllerUsuario" %>
 <%
     int ID = Integer.parseInt(request.getParameter("ID"));
-    TransactionDonation tdEntrada = new TransactionDonation(ID);
-    ControllerTransactionDonation contTd = new ControllerTransactionDonation();
-    TransactionDonation tdSaida = contTd.buscar(tdEntrada);
+    ScheduledDonation sdEntrada = new ScheduledDonation(ID);
+    ControllerScheduledDonation contSd = new ControllerScheduledDonation();
+    ScheduledDonation sdSaida = contSd.buscar(sdEntrada);
     
     PessoaFisica pf = new PessoaFisica("");
-    PessoaJuridica pj = new PessoaJuridica("");
     ControllerPessoaFisica contPf = new ControllerPessoaFisica();
-    ControllerPessoaJuridica contPj = new ControllerPessoaJuridica();
     List<PessoaFisica> listaSaidaPf = contPf.listar(pf);
-    List<PessoaJuridica> listaSaidaPj = contPj.listar(pj);
 %>
 <!DOCTYPE html>
 <html>
@@ -35,31 +32,20 @@
     <body>
     <div class="container"/>
         <h1>ALTERAR</h1>
-        <form name="validarTransacoesSangue" action="validarTransacoesSangue.jsp" method="post">
+        <form name="validarAlterarAgendamentos" action="validarAlterarAgendamentos.jsp" method="post">
             DOADOR:
             <select name="SELECTDOADOR" class="browser-default">
                 <% for (PessoaFisica listaDoadores : listaSaidaPf){ %>
-                    <%if(tdSaida.getIdDoador() == listaDoadores.getId() ) { %>
+                    <%if(sdSaida.getIdDoador() == listaDoadores.getId() ) { %>
                         <option selected value="<%=listaDoadores.getId()%>"><%=listaDoadores.getNome()%></option>
                     <% } else { %>
                         <option value="<%=listaDoadores.getId()%>"><%=listaDoadores.getNome()%></option>
                     <% } %>
                 <% } %>
             </select>
-            HOSPITAL:
-            <select name="SELECTHOSPITAL" class="browser-default">
-                <% for (PessoaJuridica listaHospitais : listaSaidaPj){ %>
-                    <%if(tdSaida.getIdHospital() == listaHospitais.getId() ) { %>
-                        <option selected value="<%=listaHospitais.getId()%>"><%=listaHospitais.getRazaoSocial()%></option>
-                    <% } else { %>
-                        <option value="<%=listaHospitais.getId()%>"><%=listaHospitais.getRazaoSocial()%></option>
-                    <% } %>
-                <% } %>
-            </select>
-            QUANTIDADE <input type="text" name="QTD" value="<%=tdSaida.getQtd()%>"> <br>
-            DATA <input type="text" name="DATA" value="<%=tdSaida.getData()%>"> <br>
-            TESTE <input type="text" name="TESTE" value="<%=tdSaida.getTeste()%>"> <br>
-            <input type="hidden" name="ID" value="<%=tdSaida.getId()%>"> <br>
+            DATA <input type="text" name="DATA" value="<%=sdSaida.getData()%>"> <br>
+            STATUS <input type="text" name="STATUS" value="<%=sdSaida.getStatus()%>"> <br>
+            <input type="hidden" name="ID" value="<%=sdSaida.getId()%>"> <br>
             <input type="submit" name="ALTERAR" value="ALTERAR"> <br>
         </form>
     </div>
