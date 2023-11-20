@@ -11,9 +11,9 @@
     <title>JSP Page</title>
     <body>
     <div class="container"/>
-    <h1>LISTAR</h1>
-        <FORM name="validarListarTransacoesSangue" action="validarListarTransacoesSangue.jsp" method="post">
-            DATA : <input type="text" name ="DATA" value=""> <br>
+    <h1>BUSCAR</h1>
+        <FORM name="validarBuscarAgendamentos" action="validarBuscarAgendamentos.jsp" method="post">
+            ID : <input type="text" name ="ID" value=""> <br>
             <input type="submit" name ="ENTRAR" value="ENTRAR">
         </FORM>
     </div>

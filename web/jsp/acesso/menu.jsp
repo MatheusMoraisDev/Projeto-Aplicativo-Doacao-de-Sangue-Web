@@ -43,9 +43,9 @@
             <a href="../transacoessangue/listarTransacoesSangue.jsp">Listar</a> 
             <a href="../transacoessangue/inserirTransacoesSangue.jsp">Inserir</a>
         <h1>Agendamentos</h1> 
-            <a href="../ususist/buscarUsuSist.jsp">Buscar</a> 
-            <a href="../ususist/listarUsuSist.jsp">listar</a> 
-            <a href="../ususist/inserirUsuSist.jsp">Inserir</a>
+            <a href="../agendamentos/buscarAgendamentos.jsp">Buscar</a> 
+            <a href="../agendamentos/listarAgendamentos.jsp">listar</a> 
+            <a href="../agendamentos/inserirAgendamentos.jsp">Inserir</a>
         <% } else { %> 
         <h1>Usuário Invalido</h1> 
     <% } %> 

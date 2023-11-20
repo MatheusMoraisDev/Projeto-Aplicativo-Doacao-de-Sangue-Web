@@ -13,7 +13,7 @@
     <div class="container"/>
     <h1>LISTAR</h1>
         <FORM name="validarListarTransacoesSangue" action="validarListarTransacoesSangue.jsp" method="post">
-            NOME : <input type="text" name ="DATA" value=""> <br>
+            DATA : <input type="text" name ="DATA" value=""> <br>
             <input type="submit" name ="ENTRAR" value="ENTRAR">
         </FORM>
     </div>

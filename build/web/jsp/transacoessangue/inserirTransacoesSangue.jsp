@@ -20,10 +20,6 @@
     PessoaJuridica Pj = new PessoaJuridica("");
     ControllerPessoaJuridica contPj = new ControllerPessoaJuridica();
     List<PessoaJuridica> listaSaidaPj = contPj.listar(Pj);
-    
-    TransactionDonation Td = new TransactionDonation("");
-    ControllerTransactionDonation contTd = new ControllerTransactionDonation();
-    List<TransactionDonation> listaSaidaTd = contTd.listar(Td);
 %>
     
 <!DOCTYPE html>
