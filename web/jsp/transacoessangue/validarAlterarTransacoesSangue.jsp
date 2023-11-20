@@ -8,7 +8,7 @@
 <%@page import="backenddmm20232.models.beans.TransactionDonation" %>
 <%@page import="backenddmm20232.controllers.ControllerTransactionDonation" %>
 <%
-    int id = Integer.parseInt(request.getParameter("SELECTREG"));
+    int id = Integer.parseInt(request.getParameter("ID"));
     int idDoador = Integer.parseInt(request.getParameter("SELECTDOADOR"));
     int idHospital = Integer.parseInt(request.getParameter("SELECTHOSPITAL"));
     int qtd = Integer.parseInt(request.getParameter("QTD"));

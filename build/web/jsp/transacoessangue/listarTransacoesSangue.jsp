@@ -12,8 +12,8 @@
     <body>
     <div class="container"/>
     <h1>LISTAR</h1>
-        <FORM name="validarListarSistema" action="validarListarSistema.jsp" method="post">
-            NOME : <input type="text" name ="NOME" value=""> <br>
+        <FORM name="validarListarTransacoesSangue" action="validarListarTransacoesSangue.jsp" method="post">
+            NOME : <input type="text" name ="DATA" value=""> <br>
             <input type="submit" name ="ENTRAR" value="ENTRAR">
         </FORM>
     </div>

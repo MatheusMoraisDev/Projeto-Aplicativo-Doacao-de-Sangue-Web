@@ -4,14 +4,14 @@
     Author     : User
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="backenddmm20232.models.beans.Sistema" %>
-<%@page import="backenddmm20232.controllers.ControllerSistema" %>
+<%@page import="backenddmm20232.models.beans.TransactionDonation" %>
+<%@page import="backenddmm20232.controllers.ControllerTransactionDonation" %>
 
 <%
     int id = Integer.parseInt(request.getParameter("ID"));
-    Sistema sisEntrada = new Sistema(id);
-    ControllerSistema sistCont = new ControllerSistema();
-    Sistema usSaida = sistCont.buscar(sisEntrada);
+    TransactionDonation tdEntrada = new TransactionDonation(id);
+    ControllerTransactionDonation tdCont = new ControllerTransactionDonation();
+    TransactionDonation tdSaida = tdCont.buscar(tdEntrada);
 %>
 
 <!DOCTYPE html>
@@ -20,11 +20,11 @@
     <title>JSP Page</title>
     <body>
     <div class="container"/>
-        <h1>BUSCA</h1> <br>
-        <% if (usSaida != null) { %> 
-            UsuarioSistema = <%=usSaida.getId()%> | <%=usSaida.getNome()%> | <%=usSaida.getServidor()%> | <%=usSaida.getStatus()%>
+        <h1>BUSCAR</h1> <br>
+        <% if (tdSaida != null) { %> 
+            Transação de Sangue = <%=tdSaida.getId()%> | <%=tdSaida.getIdDoador()%> | <%=tdSaida.getIdHospital()%> | <%=tdSaida.getQtd()%> | <%=tdSaida.getData()%> | <%=tdSaida.getTeste()%>
         <% } else { %> 
-            usSaida = Não encontrado
+            Transação de Sangue = Não encontrado
         <% } %> 
     </div>
     </body>
