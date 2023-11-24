@@ -1,5 +1,5 @@
 <%-- 
-    Document   : buscarUsuario
+    Document   : buscaUsuario
     Created on : 09/04/2021, 10:17:22
     Author     : User
 --%>
@@ -12,7 +12,7 @@
     <body>
     <div class="container"/>
     <h1>BUSCAR</h1>
-        <FORM name="validarBuscarUsuario" action="validarBuscarUsuario.jsp" method="post">
+        <FORM name="validarBuscarTransacoesSangue" action="validarBuscarTransacoesSangue.jsp" method="post">
             ID : <input type="text" name ="ID" value=""> <br>
             <input type="submit" name ="ENTRAR" value="ENTRAR">
         </FORM>

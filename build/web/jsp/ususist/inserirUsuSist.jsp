@@ -24,7 +24,7 @@
             USUARIO:
             <select name="SELECTUSU" class="browser-default">
                 <% for (Usuario listaUsu : listaSaidaUsu){ %>
-                        <option value="<%=listaUsu.getId()%>"><%=listaUsu.getLogin()%></option>
+                        <option value="<%=listaUsu.getId()%>"></option>
                 <% } %>
             </select>
             SISTEMA:

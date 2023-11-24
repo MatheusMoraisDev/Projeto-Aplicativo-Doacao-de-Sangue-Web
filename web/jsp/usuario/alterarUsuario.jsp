@@ -1,5 +1,5 @@
 <%-- 
-    Document   : alteraUsuario.jsp
+    Document   : alterarUsuario.jsp
     Created on : 08/04/2021, 20:13:33
     Author     : User
 --%>
@@ -20,7 +20,7 @@
     <title>JSP Page</title>
     <body>
     <div class="container"/>
-        <h1>ALTERAR</h1>
+        <h1>ALTERA</h1>
         <form name="validarAlterarUsuario" action="validarAlterarUsuario.jsp" method="post">
             ID <%=uSaida.getId()%> <br>
             LOGIN <input type="text" name="LOGIN" value="<%=uSaida.getLogin()%>"> <br>
