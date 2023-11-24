@@ -46,6 +46,14 @@
         <a href="../ususist/buscarUsuSist.jsp">Buscar</a> 
         | <a href="../ususist/listarUsuSist.jsp">listar</a> 
         | <a href="../ususist/inserirUsuSist.jsp">Inserir</a>
+         <h1>Campanha de Doações</h1>
+         <a href="../campanhadoacao/buscarCampanhaDoacao.jsp">Buscar</a> 
+        | <a href="../campanhadoacao/listarCampanhaDoacao.jsp">listar</a> 
+        | <a href="../campanhadoacao/inserirCampanhaDoacao.jsp">Inserir</a>
+        <h1>Feedback</h1>
+         <a href="../feedback/buscarFeedback.jsp">Buscar</a> 
+        | <a href="../feedback/listarFeedback.jsp">listar</a> 
+        | <a href="../feedback/inserirFeedback.jsp">Inserir</a>
         <% } else { %> 
         <h1>Usuário Invalido</h1> 
     <% } %> 

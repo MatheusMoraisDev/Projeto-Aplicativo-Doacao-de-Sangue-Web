@@ -11,7 +11,7 @@
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
                 <library dirs="200">
-                    <file>${reference.BackEndDmm20232.jar}</file>
+                    <file>${reference.BackEndDmm202322.jar}</file>
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
             </web-module-libraries>
@@ -26,7 +26,7 @@
         <libraries xmlns="http://www.netbeans.org/ns/cdnjs-libraries/1"/>
         <references xmlns="http://www.netbeans.org/ns/ant-project-references/1">
             <reference>
-                <foreign-project>BackEndDmm20232</foreign-project>
+                <foreign-project>BackEndDmm202322</foreign-project>
                 <artifact-type>jar</artifact-type>
                 <script>build.xml</script>
                 <target>jar</target>
