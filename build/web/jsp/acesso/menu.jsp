@@ -43,10 +43,16 @@
             <a href="../transacoessangue/listarTransacoesSangue.jsp">Listar</a> 
             <a href="../transacoessangue/inserirTransacoesSangue.jsp">Inserir</a>
         <h1>Agendamentos</h1> 
-<<<<<<< HEAD
+
         <a href="../ususist/buscarUsuSist.jsp">Buscar</a> 
         | <a href="../ususist/listarUsuSist.jsp">listar</a> 
         | <a href="../ususist/inserirUsuSist.jsp">Inserir</a>
+        
+        <h1>Estoque de Sangue</h1> 
+            <a href="../estoquesangue/buscarEstoqueSangue.jsp">Buscar</a> 
+            <a href="../estoquesangue/listarEstoqueSangue.jsp">Listar</a> 
+            <a href="../estoquesangue/inserirEstoqueSangue.jsp">Inserir</a>
+        
          <h1>Campanha de Doações</h1>
          <a href="../campanhadoacao/buscarCampanhaDoacao.jsp">Buscar</a> 
         | <a href="../campanhadoacao/listarCampanhaDoacao.jsp">listar</a> 
@@ -55,11 +61,11 @@
          <a href="../feedback/buscarFeedback.jsp">Buscar</a> 
         | <a href="../feedback/listarFeedback.jsp">listar</a> 
         | <a href="../feedback/inserirFeedback.jsp">Inserir</a>
-=======
+
             <a href="../agendamentos/buscarAgendamentos.jsp">Buscar</a> 
             <a href="../agendamentos/listarAgendamentos.jsp">listar</a> 
             <a href="../agendamentos/inserirAgendamentos.jsp">Inserir</a>
->>>>>>> a64b8375844240af91e02d8c8122682be7c81cbc
+
         <% } else { %> 
         <h1>Usuário Invalido</h1> 
     <% } %> 
