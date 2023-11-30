@@ -5,17 +5,14 @@
 --%>
 <%@page import="backenddmm20232.controllers.ControllerPessoaJuridica"%>
 <%@page import="backenddmm20232.models.beans.PessoaJuridica"%>
-<%@page import="backenddmm20232.controllers.ControllerPessoaFisica"%>
-<%@page import="backenddmm20232.models.beans.PessoaFisica"%>
 <%@page import="java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="backenddmm20232.models.beans.ScheduledDonation" %>
-<%@page import="backenddmm20232.controllers.ControllerScheduledDonation" %>
+
 
 <%
-    PessoaFisica pf = new PessoaFisica("");
-    ControllerPessoaFisica contPf = new ControllerPessoaFisica();
-    List<PessoaFisica> listaSaidaPf = contPf.listar(pf);
+    PessoaJuridica pj = new PessoaJuridica("");
+    ControllerPessoaJuridica contPj = new ControllerPessoaJuridica();
+    List<PessoaJuridica> listaSaidaPj = contPj.listar(pj);
 %>
     
 <!DOCTYPE html>
@@ -25,15 +22,21 @@
     <body>
     <div class="container"/>
         <h1>INSERIR</h1>
-        <form name="validarInserirAgendamentos" action="validarInserirAgendamentos.jsp" method="post">
-        DOADOR:
-        <select name="SELECTDOADOR" class="browser-default">
-        <% for (PessoaFisica listaDoadores : listaSaidaPf){ %>
-                <option value="<%=listaDoadores.getId()%>"><%=listaDoadores.getNome()%></option>
+        <form name="validarInserirPessoaJuridica" action="validarInserirPessoaJuridica.jsp" method="post">
+        HOSPITAIS:
+        <select name="SELECTPJ" class="browser-default">
+        <% for (PessoaJuridica listaHospitais : listaSaidaPj){ %>
+                <option value="<%=listaHospitais.getId()%>"><%=listaHospitais.getRazaoSocial()%></option>
         <% } %>
         </select>
-        DATA : <input type="text" name ="DATA" value=""> <br>
-        STATUS: <input type="text" name ="STATUS" value=""> <br>
+            ID <input type="text" name="ID" value="" <br>
+            RAZÃO SOCIAL <input type="text" name="RAZAOSOCIAL" value=""> <br>
+            NOME FANTASIA <input type="text" name="NOMEFANTASIA" value=""> <br>
+            CNPJ <input type="text" name="CNPJ" value=""> <br>
+            INSCRIÇÃO ESTADUAL <input type="text" name="INSCRICAOESTADUAL" value=""> <br>
+            ENDEREÇO <input type="text" name="ENDERECO" value=""> <br>
+            TELEFONE <input type="text" name="TELEFONE" value=""> <br>
+            E-MAIL <input type="text" name="EMAIL" value=""> <br>
         <input type="submit" name ="ENTRAR" value="ENTRAR">
         </form>
     </div>

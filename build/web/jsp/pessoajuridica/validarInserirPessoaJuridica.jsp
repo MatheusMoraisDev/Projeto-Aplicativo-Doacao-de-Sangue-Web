@@ -4,21 +4,26 @@
     Author     : User
 --%>
 
-<%@page import="backenddmm20232.controllers.ControllerScheduledDonation"%>
-<%@page import="backenddmm20232.controllers.ControllerScheduledDonation"%>
-<%@page import="backenddmm20232.models.beans.ScheduledDonation"%>
+<%@page import="backenddmm20232.controllers.ControllerPessoaJuridica"%>
+<%@page import="backenddmm20232.controllers.ControllerPessoaJuridica"%>
+<%@page import="backenddmm20232.models.beans.PessoaJuridica"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="backenddmm20232.models.beans.Sistema" %>
 <%@page import="backenddmm20232.controllers.ControllerSistema" %>
 
 <%
-    int idDoador = Integer.parseInt(request.getParameter("SELECTDOADOR"));
-    String data = request.getParameter("DATA");
-    String status = request.getParameter("STATUS");
+    int id = Integer.parseInt(request.getParameter("ID"));
+    String razaoSocial = request.getParameter("SELECTPJ");
+    String nomeFantasia = request.getParameter("NOMEFANTASIA");
+    String cnpj = request.getParameter("CNPJ");
+    String inscricaoEstadual = request.getParameter("INSCRICAOESTADUAL");
+    String endereco = request.getParameter("ENDERECO");
+    String telefone = request.getParameter("TELEFONE");
+    String email = request.getParameter("EMAIL");
     
-    ScheduledDonation sdEntrada = new ScheduledDonation(idDoador, data, status);
-    ControllerScheduledDonation contSd = new ControllerScheduledDonation();
-    ScheduledDonation sdSaida = contSd.inserir(sdEntrada);
+    PessoaJuridica pjEntrada = new PessoaJuridica(id, razaoSocial, nomeFantasia, cnpj, inscricaoEstadual, endereco, telefone, email);
+    ControllerPessoaJuridica contPj = new ControllerPessoaJuridica();
+    PessoaJuridica pjSaida = contPj.inserir(pjEntrada);
 %>
 
 <!DOCTYPE html>
@@ -28,10 +33,14 @@
     <body>
     <div class="container"/>
         <h1>INCLUSÃO CONCLUIDA</h1>
-        ID = <%=sdSaida.getId()%> <br>
-        ID DOADOR = <%=sdSaida.getIdDoador()%> <br>
-        DATA = <%=sdSaida.getData()%> <br>
-        STATUS = <%=sdSaida.getStatus()%> <br>
+        ID = <%=pjSaida.getId()%> <br>
+        RAZÃO SOCIAL = <%=pjSaida.getRazaoSocial()%><br>
+        NOME FANTASIA = <%=pjSaida.getNomeFantasia()%> <br>
+        CNPJ = <%=pjSaida.getCnpj()%> <br>
+        INSCRIÇÃO ESTADUAL = <%=pjSaida.getIe()%> <br>
+        ENDEREÇO = <%=pjSaida.getEndereco()%> <br>
+        TELEFONE = <%=pjSaida.getTelefone()%> <br>
+        E-MAIL = <%=pjSaida.getEmail()%> <br>
     </div>
     </body>
 </html>

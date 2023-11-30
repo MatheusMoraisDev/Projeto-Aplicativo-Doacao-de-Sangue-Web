@@ -4,14 +4,14 @@
     Author     : User
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="backenddmm20232.models.beans.ScheduledDonation" %>
-<%@page import="backenddmm20232.controllers.ControllerScheduledDonation" %>
+<%@page import="backenddmm20232.models.beans.PessoaJuridica" %>
+<%@page import="backenddmm20232.controllers.ControllerPessoaJuridica" %>
 
 <%
     int id = Integer.parseInt(request.getParameter("ID"));
-    ScheduledDonation sdEntrada = new ScheduledDonation(id);
-    ControllerScheduledDonation sdCont = new ControllerScheduledDonation();
-    ScheduledDonation sdSaida = sdCont.buscar(sdEntrada);
+    PessoaJuridica pjEntrada = new PessoaJuridica(id);
+    ControllerPessoaJuridica pjCont = new ControllerPessoaJuridica();
+    PessoaJuridica pjSaida = pjCont.buscar(pjEntrada);
 %>
 
 <!DOCTYPE html>
@@ -21,10 +21,10 @@
     <body>
     <div class="container"/>
         <h1>BUSCAR</h1> <br>
-        <% if (sdSaida != null) { %> 
-            Agendamentos = <%=sdSaida.getId()%> | <%=sdSaida.getIdDoador()%> | <%=sdSaida.getData()%> | <%=sdSaida.getStatus()%>
+        <% if (pjSaida != null) { %> 
+            Pessoa Jurídica = <%=pjSaida.getId()%> | <%=pjSaida.getRazaoSocial()%> | <%=pjSaida.getNomeFantasia()%> | <%=pjSaida.getCnpj()%> | <%=pjSaida.getCnpj()%> | <%=pjSaida.getIe()%> | <%=pjSaida.getEndereco()%> | <%=pjSaida.getTelefone()%> | <%=pjSaida.getEmail()%>
         <% } else { %> 
-            Agendamentos = Não encontrado
+            Pessoa Jurídica = Não encontrado
         <% } %> 
     </div>
     </body>

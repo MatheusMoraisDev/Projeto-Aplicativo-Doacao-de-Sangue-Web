@@ -4,14 +4,14 @@
     Author     : User
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="backenddmm20232.models.beans.ScheduledDonation" %>
-<%@page import="backenddmm20232.controllers.ControllerScheduledDonation" %>
+<%@page import="backenddmm20232.models.beans.PessoaJuridica" %>
+<%@page import="backenddmm20232.controllers.ControllerPessoaJuridica" %>
 
 <%
     int id = Integer.parseInt(request.getParameter("ID"));
-    ScheduledDonation sdEntrada = new ScheduledDonation(id);
-    ControllerScheduledDonation tdCont = new ControllerScheduledDonation();
-    ScheduledDonation sdSaida = tdCont.excluir(sdEntrada);
+    PessoaJuridica pjEntrada = new PessoaJuridica(id);
+    ControllerPessoaJuridica pjCont = new ControllerPessoaJuridica();
+    PessoaJuridica pjSaida = pjCont.excluir(pjEntrada);
 %>
 
 <!DOCTYPE html>
@@ -21,9 +21,14 @@
     <body>
     <div class="container"/>
         <h1>VALIDAR EXCLUSÃO</h1>
-        ID = <%=sdSaida.getId()%> <br>
-        DATA = <%=sdSaida.getData()%> <br>
-        STATUS = <%=sdSaida.getStatus()%> <br>
+        ID = <%=pjSaida.getId()%> <br>
+        RAZÃO SOCIAL = <%=pjSaida.getRazaoSocial()%><br>
+        NOME FANTASIA = <%=pjSaida.getNomeFantasia()%> <br>
+        CNPJ = <%=pjSaida.getCnpj()%> <br>
+        INSCRIÇÃO ESTADUAL = <%=pjSaida.getIe()%> <br>
+        ENDEREÇO = <%=pjSaida.getEndereco()%> <br>
+        TELEFONE = <%=pjSaida.getTelefone()%> <br>
+        E-MAIL = <%=pjSaida.getEmail()%> <br>
     </div>
     </body>
 </html>

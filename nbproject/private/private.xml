@@ -3,13 +3,29 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
-            <file>file:/C:/Users/user/Desktop/Livia/Fatec/4º%20Semestre/Programação%20mobile/Projeto-Aplicativo-Doacao-de-Sangue-Web/web/jsp/campanhadoacao/listarCampanhaDoacao.jsp</file>
-            <file>file:/C:/Users/user/Desktop/Livia/Fatec/4º%20Semestre/Programação%20mobile/Projeto-Aplicativo-Doacao-de-Sangue-Web/web/jsp/campanhadoacao/validarListarCampanhaDoacao.jsp</file>
-=======
-            <file>file:/C:/Users/Matheus%20Morais/Documents/WebDmm20232/web/jsp/ususist/alterarUsuSist.jsp</file>
-            <file>file:/C:/Users/Matheus%20Morais/Documents/WebDmm20232/web/jsp/transacoessangue/alterarTransacoesSangue.jsp</file>
->>>>>>> a64b8375844240af91e02d8c8122682be7c81cbc
+            <file>file:/C:/GitHub/Projeto-Aplicativo-Doacao-de-Sangue-Web/web/jsp/estoquesangue/alterarEstoqueSangue.jsp</file>
+            <file>file:/C:/GitHub/Projeto-Aplicativo-Doacao-de-Sangue-Web/web/jsp/estoquesangue/listarEstoqueSangue.jsp</file>
+            <file>file:/C:/GitHub/Projeto-Aplicativo-Doacao-de-Sangue-Web/web/jsp/acesso/menu.jsp</file>
+            <file>file:/C:/GitHub/Projeto-Aplicativo-Doacao-de-Sangue-Web/web/jsp/agendamentos/validarAlterarAgendamentos.jsp</file>
+            <file>file:/C:/GitHub/Projeto-Aplicativo-Doacao-de-Sangue-Web/web/jsp/pessoajuridica/buscarPessoaJuridica.jsp</file>
+            <file>file:/C:/GitHub/Projeto-Aplicativo-Doacao-de-Sangue-Web/web/jsp/pessoajuridica/validarBuscarPessoaJuridica.jsp</file>
+            <file>file:/C:/GitHub/Projeto-Aplicativo-Doacao-de-Sangue-Web/web/jsp/pessoajuridica/validarListarPessoaJuridica.jsp</file>
+            <file>file:/C:/GitHub/Projeto-Aplicativo-Doacao-de-Sangue-Web/web/jsp/pessoajuridica/validarExcluirPessoaJuridica.jsp</file>
+            <file>file:/C:/GitHub/Projeto-Aplicativo-Doacao-de-Sangue-Web/web/jsp/estoquesangue/inserirEstoqueSangue.jsp</file>
+            <file>file:/C:/GitHub/Projeto-Aplicativo-Doacao-de-Sangue-Web/web/jsp/pessoajuridica/validarInserirPessoaJuridica.jsp</file>
+            <file>file:/C:/GitHub/Projeto-Aplicativo-Doacao-de-Sangue-Web/web/jsp/estoquesangue/validarExcluirEstoqueSangue.jsp</file>
+            <file>file:/C:/GitHub/Projeto-Aplicativo-Doacao-de-Sangue-Web/web/jsp/estoquesangue/buscarEstoqueSangue.jsp</file>
+            <file>file:/C:/GitHub/Projeto-Aplicativo-Doacao-de-Sangue-Web/web/jsp/estoquesangue/validarBuscarEstoqueSangue.jsp</file>
+            <file>file:/C:/GitHub/Projeto-Aplicativo-Doacao-de-Sangue-Web/web/jsp/estoquesangue/validarAlterarEstoqueSangue.jsp</file>
+            <file>file:/C:/GitHub/Projeto-Aplicativo-Doacao-de-Sangue-Web/web/jsp/estoquesangue/validarInserirEstoqueSangue.jsp</file>
+            <file>file:/C:/GitHub/Projeto-Aplicativo-Doacao-de-Sangue-Web/web/jsp/estoquesangue/validarListarEstoqueSangue.jsp</file>
+            <file>file:/C:/GitHub/Projeto-Aplicativo-Doacao-de-Sangue-Web/web/jsp/pessoajuridica/listarPessoaJuridica.jsp</file>
+            <file>file:/C:/GitHub/Projeto-Aplicativo-Doacao-de-Sangue-Web/web/jsp/pessoajuridica/validarAlterarPessoaJuridica.jsp</file>
+            <file>file:/C:/GitHub/Projeto-Aplicativo-Doacao-de-Sangue-Web/web/jsp/agendamentos/buscarAgendamentos.jsp</file>
+            <file>file:/C:/GitHub/Projeto-Aplicativo-Doacao-de-Sangue-Web/web/jsp/agendamentos/alterarAgendamentos.jsp</file>
+            <file>file:/C:/GitHub/Projeto-Aplicativo-Doacao-de-Sangue-Web/web/jsp/ususist/alterarUsuSist.jsp</file>
+            <file>file:/C:/GitHub/Projeto-Aplicativo-Doacao-de-Sangue-Web/web/jsp/pessoajuridica/inserirPessoaJuridica.jsp</file>
+            <file>file:/C:/GitHub/Projeto-Aplicativo-Doacao-de-Sangue-Web/web/jsp/pessoajuridica/alterarPessoaJuridica.jsp</file>
         </group>
     </open-files>
 </project-private>
