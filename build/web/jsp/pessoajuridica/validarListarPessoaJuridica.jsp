@@ -24,7 +24,7 @@
         <h1>LISTA</h1> <br>
         <% if(!(listapj.isEmpty())) { %>
             <% for (PessoaJuridica pjSaida : listapj) { %>
-                ID = <%=pjSaida.getId()%> | RAZÃO SOCIAL = <%=pjSaida.getRazaoSocial()%> | NOME FANTASIA = <%=pjSaida.getNomeFantasia()%> | CNPJ = <%=pjSaida.getCnpj()%> | INSCRIÇÃO ESTADUAL = <%=pjSaida.getIe()%> | ENDEREÇO = <%=pjSaida.getEndereco()%> | TELEFONE = <%=pjSaida.getTelefone()%> | E-MAIL = <%=pjSaida.getEmail()%> - <a href="../pessoajuridica/alterarPessoaJuridica.jsp?ID=<%=pjSaida.getId()%>">Alterar</a> - <a href="../pessoajuridica/validarExcluirPessoaJuridica.jsp?ID=<%=pjSaida.getId()%>">Excluir</a> <br>
+                ID = <%=pjSaida.getId()%> - <a href="../pessoajuridica/alterarPessoaJuridica.jsp?ID=<%=pjSaida.getId()%>">Alterar</a> - <a href="../pessoajuridica/validarExcluirPessoaJuridica.jsp?ID=<%=pjSaida.getId()%>">Excluir</a> <br>
             <% } %>
        <% } else { %>
             LISTA VAZIA
