@@ -32,18 +32,13 @@
             <a href="../pessoa/buscarPessoa.jsp">Buscar</a> 
             <a href="../pessoa/listarPessoa.jsp">Listar</a> 
             <a href="../pessoa/inserirPessoa.jsp">Inserir</a>
-            
-        <h1>Pessoa Jurídica</h1> 
-            <a href="../pessoajuridica/buscarPessoaJuridica.jsp">Buscar</a> 
-            <a href="../pessoajuridica/listarPessoaJuridica.jsp">Listar</a> 
-            <a href="../pessoajuridica/inserirPessoaJuridica.jsp">Inserir</a>
         
         <h1>Sistema</h1> 
             <a href="../sistema/buscarSistema.jsp">Buscar</a> 
             <a href="../sistema/listarSistema.jsp">Listar</a> 
             <a href="../sistema/inserirSistema.jsp">Inserir</a>
         
-        <h1>Usuario-Sistema</h1>
+        <h1>Usuario Sistema</h1>
             <a href="../ususist/buscarUsuSist.jsp">Buscar</a> 
             <a href="../ususist/listarUsuSist.jsp">listar</a> 
             <a href="../ususist/inserirUsuSist.jsp">Inserir</a>
@@ -54,23 +49,29 @@
             <a href="../transacoessangue/inserirTransacoesSangue.jsp">Inserir</a>
         
         <h1>Agendamentos</h1> 
-        <a href="../agendamentos/buscarAgendamentos.jsp">Buscar</a> 
-        <a href="../agendamentos/listarAgendamentos.jsp">listar</a> 
-        <a href="../agendamentos/inserirAgendamentos.jsp">Inserir</a>
+            <a href="../agendamentos/buscarAgendamentos.jsp">Buscar</a> 
+            <a href="../agendamentos/listarAgendamentos.jsp">listar</a> 
+            <a href="../agendamentos/inserirAgendamentos.jsp">Inserir</a>
         
         <h1>Estoque de Sangue</h1> 
             <a href="../estoquesangue/buscarEstoqueSangue.jsp">Buscar</a> 
             <a href="../estoquesangue/listarEstoqueSangue.jsp">Listar</a> 
             <a href="../estoquesangue/inserirEstoqueSangue.jsp">Inserir</a>
+            
+        <h1>Pessoa Jurídica</h1> 
+            <a href="../pessoajuridica/buscarPessoaJuridica.jsp">Buscar</a> 
+            <a href="../pessoajuridica/listarPessoaJuridica.jsp">Listar</a> 
+            <a href="../pessoajuridica/inserirPessoaJuridica.jsp">Inserir</a>
         
          <h1>Campanha de Doações</h1>
-         <a href="../campanhadoacao/buscarCampanhaDoacao.jsp">Buscar</a> 
-        | <a href="../campanhadoacao/listarCampanhaDoacao.jsp">listar</a> 
-        | <a href="../campanhadoacao/inserirCampanhaDoacao.jsp">Inserir</a>
+            <a href="../campanhadoacao/buscarCampanhaDoacao.jsp">Buscar</a> 
+            <a href="../campanhadoacao/listarCampanhaDoacao.jsp">listar</a> 
+            <a href="../campanhadoacao/inserirCampanhaDoacao.jsp">Inserir</a>
+        
         <h1>Feedback</h1>
-         <a href="../feedback/buscarFeedback.jsp">Buscar</a> 
-        | <a href="../feedback/listarFeedback.jsp">listar</a> 
-        | <a href="../feedback/inserirFeedback.jsp">Inserir</a>
+            <a href="../feedback/buscarFeedback.jsp">Buscar</a> 
+            <a href="../feedback/listarFeedback.jsp">listar</a> 
+            <a href="../feedback/inserirFeedback.jsp">Inserir</a>
 
             
 

@@ -12,7 +12,7 @@
     <body>
     <div class="container"/>
     <h1>BUSCAR</h1>
-        <FORM name="validarBuscarPessoaJuridica" action="validarBuscarPessoaJuriridica.jsp" method="post">
+        <FORM name="validarBuscarPessoaJuridica" action="validarBuscarPessoaJuridica.jsp" method="post">
             ID : <input type="text" name ="ID" value=""> <br>
             <input type="submit" name ="ENTRAR" value="ENTRAR">
         </FORM>

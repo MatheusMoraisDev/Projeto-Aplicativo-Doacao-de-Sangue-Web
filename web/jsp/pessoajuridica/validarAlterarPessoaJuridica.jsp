@@ -8,8 +8,9 @@
 <%@page import="backenddmm20232.models.beans.PessoaJuridica" %>
 <%@page import="backenddmm20232.controllers.ControllerPessoaJuridica" %>
 <%
-    int id = Integer.parseInt(request.getParameter("ID"));
-    String razaoSocial = request.getParameter("SELECTPJ");
+    int id = Integer.parseInt(request.getParameter("SELECTPJ"));
+    int newId = Integer.parseInt(request.getParameter("ID"));
+    String razaoSocial = request.getParameter("RAZAOSOCIAL");
     String nomeFantasia = request.getParameter("NOMEFANTASIA");
     String cnpj = request.getParameter("CNPJ");
     String inscricaoEstadual = request.getParameter("INSCRICAOESTADUAL");

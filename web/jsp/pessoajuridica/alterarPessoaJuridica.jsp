@@ -35,7 +35,7 @@
                     <% } %>
                 <% } %>
             </select>
-            ID <input type="text" name="ID" value="<%=pjSaida.getId()%>"> <br>
+            NOVO ID <input type="text" name="ID" value="<%=pjSaida.getId()%>"> <br>
             NOVA RAZÃO SOCIAL <input type="text" name="RAZAOSOCIAL" value="<%=pjSaida.getRazaoSocial()%>"> <br>
             NOVO NOME FANTASIA <input type="text" name="NOMEFANTASIA" value="<%=pjSaida.getNomeFantasia()%>"> <br>
             NOVO CNPJ <input type="text" name="CNPJ" value="<%=pjSaida.getCnpj()%>"> <br>

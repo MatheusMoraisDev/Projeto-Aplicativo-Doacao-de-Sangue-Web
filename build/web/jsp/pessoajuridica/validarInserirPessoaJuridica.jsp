@@ -12,8 +12,7 @@
 <%@page import="backenddmm20232.controllers.ControllerSistema" %>
 
 <%
-    int id = Integer.parseInt(request.getParameter("ID"));
-    String razaoSocial = request.getParameter("SELECTPJ");
+    String razaoSocial = request.getParameter("RAZAOSOCIAL");
     String nomeFantasia = request.getParameter("NOMEFANTASIA");
     String cnpj = request.getParameter("CNPJ");
     String inscricaoEstadual = request.getParameter("INSCRICAOESTADUAL");
@@ -21,7 +20,7 @@
     String telefone = request.getParameter("TELEFONE");
     String email = request.getParameter("EMAIL");
     
-    PessoaJuridica pjEntrada = new PessoaJuridica(id, razaoSocial, nomeFantasia, cnpj, inscricaoEstadual, endereco, telefone, email);
+    PessoaJuridica pjEntrada = new PessoaJuridica(razaoSocial, nomeFantasia, cnpj, inscricaoEstadual, endereco, telefone, email);
     ControllerPessoaJuridica contPj = new ControllerPessoaJuridica();
     PessoaJuridica pjSaida = contPj.inserir(pjEntrada);
 %>
