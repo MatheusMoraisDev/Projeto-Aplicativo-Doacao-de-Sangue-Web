@@ -24,12 +24,18 @@
         <h1>LISTA</h1> <br>
         <% if(!(listapj.isEmpty())) { %>
             <% for (PessoaJuridica pjSaida : listapj) { %>
-                ID = <%=pjSaida.getId()%> - <a href="../pessoajuridica/alterarPessoaJuridica.jsp?ID=<%=pjSaida.getId()%>">Alterar</a> - <a href="../pessoajuridica/validarExcluirPessoaJuridica.jsp?ID=<%=pjSaida.getId()%>">Excluir</a> <br>
+            ID = <%=pjSaida.getId()%> | CNPJ = <%=pjSaida.getCnpj()%> | EMAIL = <%=pjSaida.getEmail()%> | ENDERECO = <%=pjSaida.getEndereco()%> | IE = <%=pjSaida.getIe()%> | NOME FANTASIA = <%=pjSaida.getNomeFantasia()%> | RAZÃO SOCIAL = <%=pjSaida.getRazaoSocial()%>- <a href="../pessoajuridica/alterarPessoaJuridica.jsp?ID=<%=pjSaida.getId()%>">Alterar</a> - <a href="../pessoajuridica/validarExcluirPessoaJuridica.jsp?ID=<%=pjSaida.getId()%>">Excluir</a> <br>
             <% } %>
        <% } else { %>
             LISTA VAZIA
        <% } %>
-
+        <%session.setAttribute("usuarioAutenticado", true);%>
+            <button onclick="redirecionarParaLogin()">Ir para o Menu</button>
+            <script>
+                function redirecionarParaLogin() {
+                    window.location.href = "../acesso/menu.jsp";
+                }
+            </script>
     </div>
     </body>
 </html>

@@ -33,7 +33,13 @@
         TIPO = <%=usSaida.getTipo()%> <br>
         STATUS = <%=usSaida.getStatus()%> <br>
         OBS = <%=usSaida.getObs()%> <br>
-
     </div>
+    <%session.setAttribute("usuarioAutenticado", true);%>
+            <button onclick="redirecionarParaLogin()">Ir para o Menu</button>
+            <script>
+                function redirecionarParaLogin() {
+                    window.location.href = "../acesso/menu.jsp";
+                }
+            </script>
     </body>
 </html>

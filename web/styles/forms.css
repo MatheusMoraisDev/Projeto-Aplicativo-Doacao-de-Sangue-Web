@@ -1,0 +1,63 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #8b0000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.titulo {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+form {
+    text-align: left;
+}
+
+select, input {
+    margin: 8px 0;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 16px; /* Tamanho da fonte */
+    border: 1px solid #ccc; /* Borda padrão com cor cinza claro */
+    outline: none; /* Remove a borda de foco padrão */
+}
+
+input:focus {
+    border-color: #007bff; /* Cor da borda quando em foco */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra quando em foco */
+}
+
+/* Adicionando estilo de hover para os botões */
+input[type="submit"], a {
+    background-color: #a82323;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+input[type="submit"]:hover, a:hover {
+    background-color: #761b1b;
+    opacity: 0.9;
+}
+
+/* Restante do seu código... */

@@ -9,7 +9,6 @@
 <%@page import="backenddmm20232.controllers.ControllerPessoaJuridica" %>
 <%
     int id = Integer.parseInt(request.getParameter("SELECTPJ"));
-    int newId = Integer.parseInt(request.getParameter("ID"));
     String razaoSocial = request.getParameter("RAZAOSOCIAL");
     String nomeFantasia = request.getParameter("NOMEFANTASIA");
     String cnpj = request.getParameter("CNPJ");
@@ -38,6 +37,13 @@
         ENDEREÇO = <%=pjSaida.getEndereco()%> <br>
         TELEFONE = <%=pjSaida.getTelefone()%> <br>
         E-MAIL = <%=pjSaida.getEmail()%> <br>
+         <%session.setAttribute("usuarioAutenticado", true);%>
+            <button onclick="redirecionarParaLogin()">Ir para o Menu</button>
+            <script>
+                function redirecionarParaLogin() {
+                    window.location.href = "../acesso/menu.jsp";
+                }
+            </script>
     </div>
     </body>
 </html>

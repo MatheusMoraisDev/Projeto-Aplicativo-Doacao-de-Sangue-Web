@@ -24,7 +24,7 @@
     <body>
     <div class="container"/>
         <h1>ALTERAR</h1>
-        <form name="validarAlterarAgendamentos" action="validarAlterarAgendamentos.jsp" method="post">
+        <form name="validarAlterarPessoaJuridica" action="validarAlterarPessoaJuridica.jsp" method="post">
             HOSPITAIS:
             <select name="SELECTPJ" class="browser-default">
                 <% for (PessoaJuridica listaHospitais : listaSaidaPj){ %>
@@ -35,17 +35,24 @@
                     <% } %>
                 <% } %>
             </select>
-            NOVO ID <input type="text" name="ID" value="<%=pjSaida.getId()%>"> <br>
-            NOVA RAZÃO SOCIAL <input type="text" name="RAZAOSOCIAL" value="<%=pjSaida.getRazaoSocial()%>"> <br>
-            NOVO NOME FANTASIA <input type="text" name="NOMEFANTASIA" value="<%=pjSaida.getNomeFantasia()%>"> <br>
-            NOVO CNPJ <input type="text" name="CNPJ" value="<%=pjSaida.getCnpj()%>"> <br>
-            NOVA INSCRIÇÃO ESTADUAL <input type="text" name="INSCRICAOESTADUAL" value="<%=pjSaida.getIe()%>"> <br>
-            NOVO ENDEREÇO <input type="text" name="ENDERECO" value="<%=pjSaida.getEndereco()%>"> <br>
-            NOVO TELEFONE <input type="text" name="TELEFONE" value="<%=pjSaida.getTelefone()%>"> <br>
-            NOVO E-MAIL <input type="text" name="EMAIL" value="<%=pjSaida.getEmail()%>"> <br>
+            ID <input type="text" name="ID" value="<%=pjSaida.getId()%>"> <br>
+            RAZÃO SOCIAL <input type="text" name="RAZAOSOCIAL" value="<%=pjSaida.getRazaoSocial()%>"> <br>
+            NOME FANTASIA <input type="text" name="NOMEFANTASIA" value="<%=pjSaida.getNomeFantasia()%>"> <br>
+            CNPJ <input type="text" name="CNPJ" value="<%=pjSaida.getCnpj()%>"> <br>
+            INSCRIÇÃO ESTADUAL <input type="text" name="INSCRICAOESTADUAL" value="<%=pjSaida.getIe()%>"> <br>
+            ENDEREÇO <input type="text" name="ENDERECO" value="<%=pjSaida.getEndereco()%>"> <br>
+            TELEFONE <input type="text" name="TELEFONE" value="<%=pjSaida.getTelefone()%>"> <br>
+            E-MAIL <input type="text" name="EMAIL" value="<%=pjSaida.getEmail()%>"> <br>
             <input type="hidden" name="ID" value="<%=pjSaida.getId()%>"> <br>
             <input type="submit" name="ALTERAR" value="ALTERAR"> <br>
         </form>
+         <%session.setAttribute("usuarioAutenticado", true);%>
+            <button onclick="redirecionarParaLogin()">Ir para o Menu</button>
+            <script>
+                function redirecionarParaLogin() {
+                    window.location.href = "../acesso/menu.jsp";
+                }
+            </script>
     </div>
     </body>
 </html>

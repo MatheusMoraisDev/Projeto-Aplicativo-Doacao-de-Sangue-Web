@@ -29,6 +29,13 @@
         ENDEREÇO = <%=pjSaida.getEndereco()%> <br>
         TELEFONE = <%=pjSaida.getTelefone()%> <br>
         E-MAIL = <%=pjSaida.getEmail()%> <br>
+         <%session.setAttribute("usuarioAutenticado", true);%>
+            <button onclick="redirecionarParaLogin()">Ir para o Menu</button>
+            <script>
+                function redirecionarParaLogin() {
+                    window.location.href = "../acesso/menu.jsp";
+                }
+            </script>
     </div>
     </body>
 </html>

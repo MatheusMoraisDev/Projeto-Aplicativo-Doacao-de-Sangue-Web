@@ -32,4 +32,11 @@
         DATA = <%=fSaida.getData()%> <br>
     </div>
     </body>
+    <%session.setAttribute("usuarioAutenticado", true);%>
+            <button onclick="redirecionarParaLogin()">Ir para o Menu</button>
+            <script>
+                function redirecionarParaLogin() {
+                    window.location.href = "../acesso/menu.jsp";
+                }
+            </script>
 </html>

@@ -48,6 +48,13 @@
             <input type="hidden" name="ID" value="<%=sdSaida.getId()%>"> <br>
             <input type="submit" name="ALTERAR" value="ALTERAR"> <br>
         </form>
+            <%session.setAttribute("usuarioAutenticado", true);%>
+            <button onclick="redirecionarParaLogin()">Ir para o Menu</button>
+            <script>
+                function redirecionarParaLogin() {
+                    window.location.href = "../acesso/menu.jsp";
+                }
+            </script>
     </div>
     </body>
 </html>

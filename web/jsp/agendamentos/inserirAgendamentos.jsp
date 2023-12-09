@@ -36,6 +36,13 @@
         STATUS: <input type="text" name ="STATUS" value=""> <br>
         <input type="submit" name ="ENTRAR" value="ENTRAR">
         </form>
+        <%session.setAttribute("usuarioAutenticado", true);%>
+            <button onclick="redirecionarParaLogin()">Ir para o Menu</button>
+            <script>
+                function redirecionarParaLogin() {
+                    window.location.href = "../acesso/menu.jsp";
+                }
+            </script>
     </div>
     </body>
 </html>

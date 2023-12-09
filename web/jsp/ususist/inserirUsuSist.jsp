@@ -38,6 +38,13 @@
             OBS <input type="text" name="OBS" value=""> <br>
             <input type="submit" name="INSERIR" value="INSERIR"> <br>
         </form>
+            <%session.setAttribute("usuarioAutenticado", true);%>
+            <button onclick="redirecionarParaLogin()">Ir para o Menu</button>
+            <script>
+                function redirecionarParaLogin() {
+                    window.location.href = "../acesso/menu.jsp";
+                }
+            </script>
     </div>
     </body>
 </html>

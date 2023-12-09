@@ -1,0 +1,54 @@
+/* Reset CSS */
+
+/* Box sizing border-box por padrão */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Remover margens e paddings padrão */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos padrão de lista removidos e melhor consistência entre navegadores */
+ul, ol {
+    list-style: none;
+}
+
+/* Remover decoração de hyperlink padrão e garantir cores consistentes */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remover possíveis quebras de fonte no IE 11 */
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+/* Redefinir fonte para herdar corretamente em alguns navegadores */
+b, strong {
+    font-weight: bold;
+}
+
+/* Garantir visibilidade de conteúdo oculto ao usar a propriedade clip */
+[hidden] {
+    display: none;
+}
+
+/* Reset de formulário */
+input, button, select, textarea {
+    font: inherit;
+}
+
+/* Redefinir estilo para fonte monoespaçada e preservar o alinhamento de texto */
+pre, code, kbd, samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}

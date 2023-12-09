@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:  #8b0000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column; /* Adicione esta linha para garantir a empilhamento vertical */
+}
+
+.title{
+    color: white;
+    margin: 2.5rem 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas com largura igual */
+    gap: 20px; /* Espaçamento entre as colunas */
+}
+
+.menu-column {
+    text-align: left;
+}
+
+/* Adicionando classe para ocupar 2 linhas */
+.full-height {
+    grid-row: span 2;
+}
+
+
+
+.containter > h1 {
+    color: #333333;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+a {
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #d9534f;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #a82323;
+}
+
+.error-message {
+    color: #ff0000;
+    font-weight: bold;
+}
